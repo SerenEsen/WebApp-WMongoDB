@@ -50,7 +50,7 @@ namespace YazılımSitesi.Controllers
         public IActionResult Index()
         {
 
-            MongoClient client = new MongoClient("mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false");
+            MongoClient client = new MongoClient("---------------------CLIENTSCRIPT------------------");
            
             IMongoDatabase db = client.GetDatabase("WEBSİTES"); //WEBSİTES adındaki veritabanına bağlantı sağlanıyor.
             IMongoCollection<Site> collection = db.GetCollection<Site>("Websites");//WebSites koleksiyonuna bağlanıyor.
